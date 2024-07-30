@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/b6-app-structure-vs-app-context/static/css/main.d5289b2f.css",
+    "main.js": "/b6-app-structure-vs-app-context/static/js/main.f6a615a2.js",
+    "index.html": "/b6-app-structure-vs-app-context/index.html",
+    "main.d5289b2f.css.map": "/b6-app-structure-vs-app-context/static/css/main.d5289b2f.css.map",
+    "main.f6a615a2.js.map": "/b6-app-structure-vs-app-context/static/js/main.f6a615a2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5289b2f.css",
+    "static/js/main.f6a615a2.js"
+  ]
+}
