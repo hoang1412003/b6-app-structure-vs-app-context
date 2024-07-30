@@ -48,9 +48,15 @@ export const AppProvider = ({ children }) => {
     else{
       newCart[index].quatity++;
     }
+    setCart([...newCart])
   }
+
+  // const updateById = (id, num)=> {
+  //   const kq=cart.map((item)=>(item.id==id && !(num==-1&& item["quantity"]==1))?{...item,quantity:item["quantity"]+num}:item)
+  //   setCart([...kq])
+  // }
   return (
-    <AppContext.Provider value={{ count, setCount, cart, addCart, deleteCart }}>
+    <AppContext.Provider value={{ count, setCount, cart, addCart, deleteCart, updateById }}>
       {children}
     </AppContext.Provider>
   )

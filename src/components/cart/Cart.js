@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { AppContext } from "../../AppContext"
 import { Button, Container, Table } from 'reactstrap'
 export default function Cart() {
-    const { cart, deleteCart } = useContext(AppContext)
+    const { cart, deleteCart, updateById } = useContext(AppContext)
     return (
         <div>
             <Container>
@@ -31,7 +31,9 @@ export default function Cart() {
                                 <td>
                                     {item.name}
                                 </td>
+                                <Button onClick={()=>updateById(item.id, 0)}>-</Button>
                                 <span>{item.quatity}</span>
+                                <Button onClick={()=>updateById(item.id, 1)}>+</Button>
                                 <td>
                                     <Button className='btn btn-danger' onClick={()=>deleteCart(item.id)}>Delete</Button>
                                 </td>
